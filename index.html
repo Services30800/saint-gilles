@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Services | Ton Nom</title>
+
+  <link rel="stylesheet" href="visuel.css">
+
+  <!-- POLICE -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICONES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+<header class="header">
+
+  <nav class="navbar">
+
+    <!-- LOGO CLIQUABLE -->
+    <a href="#" class="logo">
+      SERVICES ST-GILLES
+    </a>
+
+    <!-- MENU -->
+    <div class="menu-container">
+
+      <button class="menu-btn" id="menuBtn">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+      <!-- MENU DROPDOWN -->
+      <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="#manuel" class="menu-link">Manuel</a>
+
+        <a href="#informatique" class="menu-link">Informatique</a>
+
+        <a href="#reseaux" class="menu-link">Réseaux Sociaux</a>
+
+        <a href="#contact" class="menu-link">Contact</a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+</header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>
+        Services polyvalents et adaptés à vos besoins
+      </h1>
+
+      <p>
+        Déplacements à domicile pour vous aider ! <br>
+        Je propose différents types de services pour aider
+        les particuliers comme les professionnels :
+        informatique, réseaux sociaux et travaux manuels. <br>
+        Disponible sur Saint-Gilles et les alentours.
+      </p>
+
+      <a href="#contact" class="hero-btn">
+        Me contacter
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- MANUEL -->
+  <section class="services" id="manuel">
+
+    <div class="title">
+
+      <h2>Services Manuels</h2>
+
+      <div class="line"></div>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <i class="fa-solid fa-car"></i>
+
+        <h3>Lavage Auto</h3>
+
+        <p>
+          Nettoyage intérieur et extérieur
+          directement à domicile.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <i class="fa-solid fa-hammer"></i>
+
+        <h3>Bricolage</h3>
+
+        <p>
+          Bricolage et aide aux travaux.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <i class="fa-solid fa-box"></i>
+
+        <h3>Aide Quotidienne</h3>
+
+        <p>
+          Courses, assistance et aide quotidienne.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- INFORMATIQUE -->
+  <section class="services dark" id="informatique">
+
+    <div class="title">
+
+      <h2>Informatique</h2>
+
+      <div class="line"></div>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <i class="fa-solid fa-laptop"></i>
+
+        <h3>Dépannage PC</h3>
+
+        <p>
+          Installation, optimisation
+          et aide informatique.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <i class="fa-solid fa-mobile-screen"></i>
+
+        <h3>Smartphones</h3>
+
+        <p>
+          Configuration mobile.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <h3>Création de Sites</h3>
+
+        <p>
+          Sites modernes pour particuliers
+          et commerces.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESEAUX -->
+  <section class="services" id="reseaux">
+
+    <div class="title">
+
+      <h2>Réseaux Sociaux</h2>
+
+      <div class="line"></div>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <h3>Instagram</h3>
+
+        <p>
+          Création de contenu et visibilité.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <i class="fa-solid fa-circle-user"></i>
+
+        <h3>Conseils</h3>
+
+        <p>
+          Conseils personnalisés pour votre présence en ligne.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h3>Image de Marque</h3>
+
+        <p>
+          Modernisation des réseaux
+          et de la communication.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="contact-box">
+
+      <h2>Contact</h2>
+
+      <p>
+        Envoyez-moi un message directement.
+      </p>
+
+      <!-- FORMSPREE -->
+      <form action="https://formspree.io/f/xlgzkgoe" method="POST">
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Votre mail"
+          required
+        >
+
+        <input
+          type="tel"
+          name="telephone"
+          placeholder="Votre téléphone"
+          pattern="^(\+33|0)[1-9](\d{2}){4}$"
+          title="Entrez un numéro valide (ex: 0612345678)"
+          required
+        >
+
+        <textarea
+          name="message"
+          placeholder="Votre message"
+          required
+        ></textarea>
+
+        <button type="submit">
+          Envoyer
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 - Tous droits réservés
+    </p>
+
+  </footer>
+
+  <!-- FLECHE -->
+  <a href="#" class="top-btn" id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+  </a>
+
+  <!-- SCRIPT -->
+  <script>
+
+    // MENU
+    const menuBtn = document.getElementById("menuBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    menuBtn.addEventListener("click", () => {
+
+      dropdownMenu.classList.toggle("active-menu");
+
+    });
+
+    // FERMER MENU APRES CLIC
+    const links = document.querySelectorAll(".menu-link");
+
+    links.forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        dropdownMenu.classList.remove("active-menu");
+
+      });
+
+    });
+
+    // BOUTON HAUT
+    const topBtn = document.getElementById("topBtn");
+
+    window.addEventListener("scroll", () => {
+
+      if(window.scrollY > 300){
+
+        topBtn.classList.add("show-top");
+
+      } else {
+
+        topBtn.classList.remove("show-top");
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
